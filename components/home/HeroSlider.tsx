@@ -13,7 +13,7 @@ const slides = [
     titleEnd: "Fruits",
     subtitle: "From Kenya's Highlands",
     desc: "Hass & Fuerte avocados grown at 1,800m+ altitude. Rich, creamy, and GlobalGAP certified for the world's most discerning markets.",
-    image: "/products/hass-avocado.png",
+    image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&q=80&w=2000",
     link: "/products/hass-avocado",
     cta: "View Avocados",
   },
@@ -24,7 +24,7 @@ const slides = [
     titleEnd: "Mangoes",
     subtitle: "Kent · Apple · Ngowe",
     desc: "Sun-ripened Kent mangoes for GCC premium. Apple mangoes for EU retail. Sourced direct from Kenya's finest growers.",
-    image: "/products/mango.png",
+    image: "https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&q=80&w=2000",
     link: "/products/mango",
     cta: "View Mangoes",
   },
@@ -35,7 +35,7 @@ const slides = [
     titleEnd: "Vegetables",
     subtitle: "French Beans · Sugar Snaps · Baby Corn",
     desc: "Precision-graded to EU specification. MRL compliant, blemish-free, packed for retail and food service channels.",
-    image: "/products/french-beans.png",
+    image: "https://images.unsplash.com/photo-1595856424584-6338b552d0a4?auto=format&fit=crop&q=80&w=2000",
     link: "/products/french-beans",
     cta: "View Vegetables",
   },
@@ -75,7 +75,7 @@ export default function HeroSlider() {
               alt={slide.titleEnd}
               fill
               priority={index === 0}
-              className={`object-cover mix-blend-multiply transition-transform duration-[6000ms] ease-out ${
+              className={`object-cover transition-transform duration-[6000ms] ease-out ${
                 index === current ? "scale-105" : "scale-100"
               }`}
               sizes="100vw"
